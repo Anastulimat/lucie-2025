@@ -113,33 +113,6 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// We're still detecting portrait and landscape images for proper object-fit handling
-window.addEventListener('load', () => {
-    galleryItems.forEach(item => {
-        const img = item.querySelector('img');
-
-        // Check if image is loaded
-        if (img.complete) {
-            setImageOrientation(img, item);
-        } else {
-            img.addEventListener('load', () => {
-                setImageOrientation(img, item);
-            });
-        }
-    });
-});
-
-// Set orientation class based on image dimensions
-function setImageOrientation(img, item) {
-    // Remove the aspect-ratio for portrait images to prevent distortion
-    if (img.naturalHeight > img.naturalWidth) {
-        item.classList.add('portrait');
-        item.style.aspectRatio = 'auto'; // Let it have natural aspect ratio
-    } else {
-        item.classList.add('landscape');
-    }
-}
-
 // Intersection Observer for lazy loading and scroll animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
