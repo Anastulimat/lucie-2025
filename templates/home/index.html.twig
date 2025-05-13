@@ -1,0 +1,1668 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+    <body
+            class="site-spacing-small site-outer-padding-medium site-alignment-center tweak-site-ajax-loading-enable ancillary-header-full-width tweak-header-cart-style-text  ancillary-header-branding-position-left ancillary-header-tagline-position-left ancillary-header-primary-nav-position-right ancillary-header-secondary-nav-position-right ancillary-header-cart-position-right ancillary-header-left-layout-horizontal ancillary-header-center-layout-stacked ancillary-header-right-layout-horizontal ancillary-header-account-position-left tweak-header-account-style-text  tweak-mobile-bar-account-style-text show-desktop-folder-indicator scale-heading-1-font-size scale-heading-2-font-size scale-heading-3-font-size scale-quote-font-size quote-alignment-center show-quotation-marks   show-events-banner           show-events-title               show-collection-page-footer banner-height-small banner-image-alignment-center    banner-text-alignment-center page-banner-text-width-small  scale-banner-description-font-size  banner-text-background-indent-custom scale-page-title-font-size scale-page-description-font-size intro-text-width-large intro-text-height-medium scale-index-title-font-size scale-index-description-font-size index-intro-text-width-medium index-intro-text-height-extra-large index-item-width-half index-item-height-medium index-item-spacing-custom    index-item-image-alignment-center index-item-image-crop  index-item-title-display-on-hover index-item-title-alignment-center scale-index-item-title-font-size  show-index-item-categories  project-image-alignment-center project-image-spacing-medium project-banner-spacing-small show-project-captions project-image-portrait-caption-style-alternate  project-image-landscape-caption-style-offset project-left-image-portrait-caption-style-standard project-left-image-landscape-caption-style-standard project-right-image-portrait-caption-style-standard project-right-image-landscape-caption-style-standard    tweak-project-slide-transition image-caption-title-alignment-center scale-image-caption-title-font image-caption-body-alignment-center scale-image-caption-body-font show-index-navigation index-link-spacing-large scale-index-link-font-size index-link-style-list-inline index-link-delimiter-type-none show-next-label-only tweak-page-transition-animation tweak-mobile-bar-position-top-fixed tweak-transparent-fixed-mobile-bar tweak-mobile-bar-branding-position-left tweak-mobile-bar-menu-icon-position-right tweak-mobile-bar-site-tagline-position-below-branding  tweak-mobile-bar-cart-style-text tweak-icon-weight-light  tweak-blog-meta-primary-date tweak-blog-meta-secondary-category tweak-blog-list-style-grid tweak-blog-list-separator-show tweak-blog-list-alignment-left tweak-blog-list-item-image-show tweak-blog-list-item-image-aspect-ratio-grid-32-standard tweak-blog-list-item-image-aspect-ratio-stacked-11-square tweak-blog-list-item-title-show tweak-blog-list-item-excerpt-show tweak-blog-list-item-body-show tweak-blog-list-item-readmore-below-excerpt tweak-blog-list-item-meta-position-above-title tweak-blog-list-pagination-link-label-show tweak-blog-list-pagination-link-icon-show tweak-blog-list-pagination-link-icon-weight-light tweak-blog-item-alignment-center tweak-blog-item-meta-position-above-title tweak-blog-item-share-position-above-content  tweak-blog-item-pagination-link-label-show tweak-blog-item-pagination-link-title-show tweak-blog-item-pagination-link-meta-hide tweak-blog-item-pagination-link-icon-weight-hairline   event-thumbnails event-thumbnail-size-32-standard event-date-label event-date-label-time event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts  event-item-back-link    gallery-design-grid aspect-ratio-auto lightbox-style-light gallery-navigation-bullets gallery-info-overlay-show-on-hover gallery-aspect-ratio-32-standard gallery-arrow-style-no-background gallery-transitions-fade gallery-show-arrows gallery-auto-crop   tweak-product-list-image-aspect-ratio-23-standard-vertical tweak-product-list-item-hover-behavior-show-alternate-image tweak-product-list-meta-position-overlay tweak-product-list-mobile-meta-position-under tweak-product-list-meta-alignment-under-center tweak-product-list-meta-alignment-overlay-center-center tweak-product-list-show-title tweak-product-list-show-price tweak-product-list-filter-display-left-side tweak-product-list-filter-alignment-left tweak-product-item-nav-show-none tweak-product-item-nav-pagination-style-previousnext tweak-product-item-nav-breadcrumb-alignment-left tweak-product-item-nav-pagination-alignment-split tweak-product-item-gallery-position-left tweak-product-item-gallery-design-slideshow tweak-product-item-gallery-aspect-ratio-23-standard-vertical tweak-product-item-gallery-thumbnail-alignment-center tweak-product-item-details-alignment-left tweak-product-item-details-show-title tweak-product-item-details-show-price tweak-product-item-details-show-excerpt tweak-product-item-details-excerpt-position-below-price tweak-product-item-details-show-share-buttons tweak-product-item-details-show-variants tweak-product-item-details-show-quantity tweak-product-item-details-options-style-square tweak-product-item-details-show-add-to-cart-button tweak-product-item-details-add-to-cart-button-style-outline tweak-product-item-details-add-to-cart-button-shape-square tweak-product-item-details-add-to-cart-button-padding-medium tweak-product-item-image-zoom-enabled tweak-product-item-image-zoom-behavior-click tweak-product-item-lightbox-enabled tweak-related-products-image-aspect-ratio-11-square tweak-related-products-meta-alignment-under-center tweak-product-badge-style-square tweak-product-badge-position-top-right tweak-product-badge-inset-floating newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-outline small-button-shape-square medium-button-style-outline medium-button-shape-square large-button-style-outline large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-outline button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light tweak-share-buttons-style-icon-only tweak-share-buttons-icons-show tweak-share-buttons-labels-show tweak-share-buttons-counts-show  tweak-share-buttons-standard-background-color native-currency-code-usd collection-6586de59a4b64c6f87315502 collection-type-gallery collection-layout-default homepage view-list mobile-style-available has-site-title has-primary-nav has-secondary-nav"
+            data-controller="BodyClassController">
+
+    <div class="overflow-wrapper">
+
+
+        <input type="checkbox" name="mobile-nav-toggle" id="mobileNavToggle" class="mobile-nav-toggle-box hidden"
+               data-controller="MobileNavController"/>
+
+        <div class="mobile-bar-wrapper">
+            <div class="mobile-bar-flex-child"></div>
+            <div class="mobile-branding-wrapper">
+
+
+                <div class="mobile-site-title"><a href="index.html">VINCENT DESAILLY</a></div>
+
+
+            </div>
+            <label for="mobileNavToggle" class="mobile-nav-toggle-label" onclick>
+                <svg class="Icon Icon--hamburger" viewBox="0 0 24 18">
+                    <use xlink:href="/assets/ui-icons.svg#hamburger-icon--even" class="use--even"></use>
+                    <use xlink:href="/assets/ui-icons.svg#hamburger-icon--odd" class="use--odd"></use>
+                </svg>
+                <svg class="Icon Icon--close" viewBox="0 0 20 20">
+                    <use xlink:href="/assets/ui-icons.svg#close-icon"></use>
+                </svg>
+            </label>
+        </div>
+
+        <div class="overlay-nav-container" id="overlayNav">
+            <div class="overlay-nav-wrapper">
+                <div class="mobile-primary-nav-wrapper">
+                    <nav class="mobile-primary-nav-links">
+
+
+                        <div class="folder active">
+                            <input type="checkbox" name="mobile-folder-toggle-6586dda5bafb522e07d52703"
+                                   id="mobile-folder-toggle-6586dda5bafb522e07d52703" class="folder-toggle-box hidden"/>
+                            <label for="mobile-folder-toggle-6586dda5bafb522e07d52703" class="folder-toggle-label"
+                                   onclick
+                                   data-href="/projects">Projects
+                                <svg class="Icon Icon--caretSmall--right" viewBox="0 0 9 16">
+                                    <use xlink:href="/assets/ui-icons.svg#caret-right-small-icon"></use>
+                                </svg>
+                            </label>
+                            <div class="subnav">
+
+
+                                <div class="collection folder-link">
+                                    <a href="75020-2023.html" class="nav-item-gallery">
+                                        75020 (2023)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="de-marbre-1.html" class="nav-item-gallery">
+                                        DE MARBRE (2022)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection active folder-link">
+                                    <a href="index.html" class="nav-item-gallery">
+                                        THE RUBBER TRAIL (2022)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="my-sisters-poland-2021.html" class="nav-item-gallery">
+                                        MY SISTER'S POLAND (2021)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="nouveau-projet.html" class="nav-item-project">
+                                        THE TRAP (2019)
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="folder">
+                            <input type="checkbox" name="mobile-folder-toggle-6586de2c3809422040db009c"
+                                   id="mobile-folder-toggle-6586de2c3809422040db009c" class="folder-toggle-box hidden"/>
+                            <label for="mobile-folder-toggle-6586de2c3809422040db009c" class="folder-toggle-label"
+                                   onclick
+                                   data-href="/nouveau-dossier-1">Anas
+                                <svg class="Icon Icon--caretSmall--right" viewBox="0 0 9 16">
+                                    <use xlink:href="/assets/ui-icons.svg#caret-right-small-icon"></use>
+                                </svg>
+                            </label>
+                            <div class="subnav">
+
+
+                                <div class="collection folder-link">
+                                    <a href="south-winners-2024.html" class="nav-item-gallery">
+                                        SOUTH WINNERS (2024)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="balenciaga-2023.html" class="nav-item-gallery">
+                                        BALENCIAGA (2023)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="lahorde-2022.html" class="nav-item-gallery">
+                                        (LA)HORDE (2022)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="rodeo-2021.html" class="nav-item-gallery">
+                                        RODEO (2021)
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="dying-for-your-neigh.html" class="nav-item-gallery">
+                                        DYING FOR YOUR NEIGHBORHOOD (2021)
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                        <div class="folder">
+                            <input type="checkbox" name="mobile-folder-toggle-679939fa290ffa07e8a410d8"
+                                   id="mobile-folder-toggle-679939fa290ffa07e8a410d8" class="folder-toggle-box hidden"/>
+                            <label for="mobile-folder-toggle-679939fa290ffa07e8a410d8" class="folder-toggle-label"
+                                   onclick
+                                   data-href="/comm">Commissions
+                                <svg class="Icon Icon--caretSmall--right" viewBox="0 0 9 16">
+                                    <use xlink:href="/assets/ui-icons.svg#caret-right-small-icon"></use>
+                                </svg>
+                            </label>
+                            <div class="subnav">
+
+
+                                <div class="collection folder-link">
+                                    <a href="interiors.html" class="nav-item-gallery">
+                                        INTERIORS & CRAFTMANSHIP
+                                    </a>
+                                </div>
+
+
+                                <div class="collection folder-link">
+                                    <a href="m-le-monde-portraits.html" class="nav-item-gallery">
+                                        PRESS PORTRAITS
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                    </nav>
+                </div>
+
+
+                <div class="mobile-secondary-nav-wrapper">
+                    <nav class="mobile-secondary-nav-links">
+
+
+                        <div class="external folder-link">
+                            <a href="https://www.instagram.com/vincentdesailly/" target="_blank">
+                                Instagram
+                            </a>
+                        </div>
+
+
+                        <div class="collection folder-link">
+                            <a href="a-propos.html" class="nav-item-page">
+                                Contact
+                            </a>
+                        </div>
+
+
+                    </nav>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <div id="site" class="site-container">
+
+
+            <header id="header" class="site-header" role="banner" data-nc-base="header" data-nc-group="header"
+                    data-controller="AncillaryLayout">
+                <div data-nc-container="left">
+                    <div class="logo-wrapper" data-content-field="site-title" data-nc-element="branding">
+
+
+                        <div class="site-title"><a href="index.html">VINCENT DESAILLY</a></div>
+
+
+                    </div>
+
+                    <div class="site-tagline-wrapper" data-nc-element="tagline">
+
+                    </div>
+
+                    <div id="mainNavWrapper" class="nav-wrapper primary-nav-wrapper" data-nc-element="primary-nav">
+
+                        <nav class="site-navigation" role="navigation" data-content-field="navigation">
+
+
+                            <div class="nav-item folder active" id="id6586dda5bafb522e07d52703">
+                                <input type="checkbox" name="folder-toggle-6586dda5bafb522e07d52703"
+                                       id="folder-toggle-6586dda5bafb522e07d52703" class="folder-toggle-box hidden"/>
+                                <label for="folder-toggle-6586dda5bafb522e07d52703" class="folder-toggle-label" onclick>Projects
+                                    <svg class="Icon Icon--caretSmall--right" viewBox="0 0 9 16">
+                                        <use xlink:href="/assets/ui-icons.svg#caret-right-small-icon"></use>
+                                    </svg>
+                                </label>
+                                <div class="subnav">
+
+
+                                    <div class="collection" id="id-658481feee24634385bfcc16">
+                                        <a href="75020-2023.html" class="nav-item-gallery">
+                                            <span>75020 (2023)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-629cb251b2ebd7249df110fe">
+                                        <a href="de-marbre-1.html" class="nav-item-gallery">
+                                            <span>DE MARBRE (2022)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection active" id="id-6586de59a4b64c6f87315502">
+                                        <a href="index.html" class="nav-item-gallery">
+                                            <span>THE RUBBER TRAIL (2022)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-65844e977fa8d151d3e2fd2d">
+                                        <a href="my-sisters-poland-2021.html" class="nav-item-gallery">
+                                            <span>MY SISTER'S POLAND (2021)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-5e3adebd3ac8e451d6de3ef8">
+                                        <a href="nouveau-projet.html" class="nav-item-project">
+                                            <span>THE TRAP (2019)</span>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="nav-item folder" id="id6586de2c3809422040db009c">
+                                <input type="checkbox" name="folder-toggle-6586de2c3809422040db009c"
+                                       id="folder-toggle-6586de2c3809422040db009c" class="folder-toggle-box hidden"/>
+                                <label for="folder-toggle-6586de2c3809422040db009c" class="folder-toggle-label" onclick>Stories
+                                    <svg class="Icon Icon--caretSmall--right" viewBox="0 0 9 16">
+                                        <use xlink:href="/assets/ui-icons.svg#caret-right-small-icon"></use>
+                                    </svg>
+                                </label>
+                                <div class="subnav">
+
+
+                                    <div class="collection" id="id-66115e8c689efc37888c6394">
+                                        <a href="south-winners-2024.html" class="nav-item-gallery">
+                                            <span>SOUTH WINNERS (2024)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-65870c2b22fff0462dc06b64">
+                                        <a href="balenciaga-2023.html" class="nav-item-gallery">
+                                            <span>BALENCIAGA (2023)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-6586ecb4cd17ba7cf3dbaa3e">
+                                        <a href="lahorde-2022.html" class="nav-item-gallery">
+                                            <span>(LA)HORDE (2022)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-658ae7eb3c292c3197b5a8de">
+                                        <a href="rodeo-2021.html" class="nav-item-gallery">
+                                            <span>RODEO (2021)</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-6586e75233600d29e46c1d4f">
+                                        <a href="dying-for-your-neigh.html" class="nav-item-gallery">
+                                            <span>DYING FOR YOUR NEIGHBORHOOD (2021)</span>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="nav-item folder" id="id679939fa290ffa07e8a410d8">
+                                <input type="checkbox" name="folder-toggle-679939fa290ffa07e8a410d8"
+                                       id="folder-toggle-679939fa290ffa07e8a410d8" class="folder-toggle-box hidden"/>
+                                <label for="folder-toggle-679939fa290ffa07e8a410d8" class="folder-toggle-label" onclick>Commissions
+                                    <svg class="Icon Icon--caretSmall--right" viewBox="0 0 9 16">
+                                        <use xlink:href="/assets/ui-icons.svg#caret-right-small-icon"></use>
+                                    </svg>
+                                </label>
+                                <div class="subnav">
+
+
+                                    <div class="collection" id="id-658833b3ea3bb573199d3e8f">
+                                        <a href="interiors.html" class="nav-item-gallery">
+                                            <span>INTERIORS & CRAFTMANSHIP</span>
+                                        </a>
+                                    </div>
+
+
+                                    <div class="collection" id="id-658840e740c9105f835e81bc">
+                                        <a href="m-le-monde-portraits.html" class="nav-item-gallery">
+                                            <span>PRESS PORTRAITS</span>
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+
+                        </nav>
+
+
+                    </div>
+
+                    <div id="secondaryNavWrapper" class="nav-wrapper secondary-nav-wrapper"
+                         data-nc-element="secondary-nav">
+
+                        <nav class="site-navigation" role="navigation" data-content-field="navigation">
+
+
+                            <div class="nav-item external">
+                                <a href="https://www.instagram.com/vincentdesailly/" target="_blank">
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+
+
+                            <div class="nav-item collection" id="id-5e3ae5091dd2df314c54b6a4">
+                                <a href="a-propos.html" class="nav-item-page">
+                                    <span>Contact</span>
+                                </a>
+                            </div>
+
+
+                        </nav>
+
+
+                    </div>
+
+                    <div class="cart-wrapper" data-nc-element="cart">
+
+
+                    </div>
+
+                </div>
+                <div data-nc-container="center"></div>
+                <div data-nc-container="right"></div>
+            </header>
+
+
+            <div id="content" class="content-container">
+
+
+                <div data-controller="BannerController" class="page-banner-wrapper ">
+
+                    <div class="page-banner-image-container collection-thumbnail-image-container hide-collection-image"
+                         data-edit-main-image="Arrière-plan">
+
+
+                    </div>
+
+                    <div class="page-text-wrapper hide clearfix" data-collection-id="6586de59a4b64c6f87315502"
+                         data-edit-main-image="Arrière-plan">
+                        <h1 class="page-title"><span data-content-field="title">THE RUBBER TRAIL (2022)</span></h1>
+
+
+                        <div class="page-description" data-content-field="description"></div>
+                    </div>
+                </div>
+
+
+                <main id="page" class="site-page" role="main">
+
+
+                    <div class="sqs-layout sqs-grid-12 columns-12 collection-header empty" data-layout-label="Contenu"
+                         data-type="block-field" id="collection-header-6586de59a4b64c6f87315502">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="main-content" data-content-field="main-content">
+
+                        <!--GALLERY WRAPPER-->
+
+                        <div class="sqs-system-gallery sqs-system-gallery-init sqs-gallery-list">
+
+                            <div class="gallery-wrapper">
+
+                                <!--FULL SIZE IMAGES-->
+
+                                <div class="slides-controls">
+                                    <div class="slides" data-collection-full-url="/">
+
+                                    </div>
+
+                                    <!--PREVIOUS/NEXT CONTROLS-->
+                                    <span class="arrow previous-slide"></span>
+                                    <span class="arrow next-slide"></span>
+
+                                    <!--CIRCLES-->
+                                    <div class="circles gallery-nav">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--DOTS-->
+                            <div class="dots gallery-nav">
+
+                            </div>
+
+                            <!--NUMBERS-->
+                            <div class="numbers gallery-nav">
+
+                            </div>
+
+                            <!--SIMPLE-->
+                            <div class="simple gallery-nav">
+                                <span class="current-index"></span><span class="total-slides"></span>
+                                <span class="previous"><span class="navigation-text">Précédent</span></span>
+                                <span class="next"><span class="navigation-text">Suivant</span></span>
+                            </div>
+
+                            <!--THUMBNAILS-->
+
+                            <div class="thumbnail-wrapper gallery-nav">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="sqs-layout sqs-grid-12 columns-12 collection-footer" data-layout-label="Contenu"
+                         data-type="block-field" data-updated-on="1703353113084"
+                         id="collection-footer-6586de59a4b64c6f87315502">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-2 span-2">
+                                <div class="sqs-block html-block sqs-block-html" data-block-type="2"
+                                     data-border-radii="&#123;&quot;topLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;topRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomLeft&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;,&quot;bottomRight&quot;:&#123;&quot;unit&quot;:&quot;px&quot;,&quot;value&quot;:0.0&#125;&#125;"
+                                     id="block-65695b595b92c128d1ca">
+                                    <div class="sqs-block-content">
+
+                                        <div class="sqs-html-content">
+                                            <p class="" style="white-space:pre-wrap;"><strong><br><br><br>THE RUBBER
+                                                    TRAIL<br></strong><em>A documentary assignment for
+                                                    VEJA.<br></em><br>In
+                                                November 2022 I traveled to the Acre region (Brazil) where VEJA sources
+                                                its
+                                                wild rubber to capture images of the everyday life of families of
+                                                producers
+                                                involved in the process.</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col sqs-col-10 span-10">
+                                <div class="sqs-block gallery-block sqs-block-gallery"
+                                     data-block-json="&#123;&quot;hSize&quot;:null,&quot;floatDir&quot;:null,&quot;methodOption&quot;:&quot;transient&quot;,&quot;existingGallery&quot;:null,&quot;newWindow&quot;:false,&quot;aspect-ratio&quot;:&quot;square&quot;,&quot;aspectRatio&quot;:null,&quot;auto-crop&quot;:true,&quot;blockAnimation&quot;:&quot;none&quot;,&quot;collectionId&quot;:&quot;6586e41629f2ed58fedaed66&quot;,&quot;design&quot;:&quot;grid&quot;,&quot;lightbox&quot;:true,&quot;lightboxTheme&quot;:&quot;light&quot;,&quot;padding&quot;:20,&quot;show-meta&quot;:true,&quot;show-meta-basic&quot;:true,&quot;show-meta-only-title&quot;:false,&quot;show-meta-only-description&quot;:false,&quot;square-thumbs&quot;:false,&quot;thumbnails-per-row&quot;:3,&quot;vSize&quot;:null,&quot;transientGalleryId&quot;:&quot;6586e41629f2ed58fedaed66&quot;&#125;"
+                                     data-block-type="8" id="block-yui_3_17_2_1_1703337580052_14973">
+                                    <div class="sqs-block-content">
+
+
+                                        <div class="
+  sqs-gallery-container
+  sqs-gallery-block-grid
+  sqs-gallery-aspect-ratio-square
+  sqs-gallery-thumbnails-per-row-3
+
+
+
+
+
+
+
+  sqs-gallery-block-show-meta
+
+
+
+
+
+
+
+  block-animation-none
+  clear"
+
+
+                                        >
+                                            <div class="sqs-gallery">
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339042679-U5CDYVZ51M4BVL847YUK/01_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339042679-U5CDYVZ51M4BVL847YUK/01_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="01_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339042679-U5CDYVZ51M4BVL847YUK/01_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339042679-U5CDYVZ51M4BVL847YUK/01_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1676"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="01_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e417e291e2583f27c4af"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339041678-8MUIUPZ76LEUYWCAQ3BM/02_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339041678-8MUIUPZ76LEUYWCAQ3BM/02_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="02_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339041678-8MUIUPZ76LEUYWCAQ3BM/02_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339041678-8MUIUPZ76LEUYWCAQ3BM/02_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1713"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="02_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e417ff5066124f1fc938"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339054437-R2O3ND8LT77LVAMEKECP/04_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339054437-R2O3ND8LT77LVAMEKECP/04_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="04_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339054437-R2O3ND8LT77LVAMEKECP/04_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339054437-R2O3ND8LT77LVAMEKECP/04_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1705"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="04_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e4256fb6e916f42436a8"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339053290-QETF3DXPUE29Z26984EC/03_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339053290-QETF3DXPUE29Z26984EC/03_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="03_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339053290-QETF3DXPUE29Z26984EC/03_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339053290-QETF3DXPUE29Z26984EC/03_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1701x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="03_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e42206fdfa7abb30c2bd"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339063781-CHB39JMG97H2J8Y2K0HP/05_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339063781-CHB39JMG97H2J8Y2K0HP/05_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="05_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339063781-CHB39JMG97H2J8Y2K0HP/05_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339063781-CHB39JMG97H2J8Y2K0HP/05_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1729x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="05_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e42ecd17ba7cf3daf781"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339067151-HF3QMMBUFI0FWNU39MI6/06_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339067151-HF3QMMBUFI0FWNU39MI6/06_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="06_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339067151-HF3QMMBUFI0FWNU39MI6/06_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339067151-HF3QMMBUFI0FWNU39MI6/06_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1670x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="06_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e43033600d29e46bdde4"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339070216-N8ZQF4QNDBELVUI902GV/07_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339070216-N8ZQF4QNDBELVUI902GV/07_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="07_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339070216-N8ZQF4QNDBELVUI902GV/07_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339070216-N8ZQF4QNDBELVUI902GV/07_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1726x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="07_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e439fe583f25dd393842"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339079743-YUT4KZUD8UHD23WGMZSN/08_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339079743-YUT4KZUD8UHD23WGMZSN/08_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="08_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339079743-YUT4KZUD8UHD23WGMZSN/08_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339079743-YUT4KZUD8UHD23WGMZSN/08_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1687"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="08_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e43df767e5276752b17e"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339085182-EDRZPKPGYZOOB7BHYAR6/09_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339085182-EDRZPKPGYZOOB7BHYAR6/09_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="09_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339085182-EDRZPKPGYZOOB7BHYAR6/09_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339085182-EDRZPKPGYZOOB7BHYAR6/09_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1688x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="09_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e441bafb522e07d5d0af"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339089077-2TIU01QRR7YK4VYFSTTK/10_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339089077-2TIU01QRR7YK4VYFSTTK/10_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="10_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339089077-2TIU01QRR7YK4VYFSTTK/10_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339089077-2TIU01QRR7YK4VYFSTTK/10_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1681x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="10_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e44ba2372f72150db521"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339090851-PD9I0VIZVSOQPRVCZMD0/11_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339090851-PD9I0VIZVSOQPRVCZMD0/11_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="11_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339090851-PD9I0VIZVSOQPRVCZMD0/11_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339090851-PD9I0VIZVSOQPRVCZMD0/11_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1613"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="11_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e44f40c9105f83400c67"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339091680-SZMMEC4OLEG2NEEXEQA1/12_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339091680-SZMMEC4OLEG2NEEXEQA1/12_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="12_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339091680-SZMMEC4OLEG2NEEXEQA1/12_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339091680-SZMMEC4OLEG2NEEXEQA1/12_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1701x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="12_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e452350a5203cbb68126"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094270-2JHKVVF09XOW93W9KEAB/13_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094270-2JHKVVF09XOW93W9KEAB/13_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="13_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094270-2JHKVVF09XOW93W9KEAB/13_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094270-2JHKVVF09XOW93W9KEAB/13_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1739x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="13_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e454df48ec4852080c67"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339096774-L662VKQDENPDF18ZFWEI/15_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339096774-L662VKQDENPDF18ZFWEI/15_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="15_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339096774-L662VKQDENPDF18ZFWEI/15_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339096774-L662VKQDENPDF18ZFWEI/15_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1693"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="15_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e457a4f4ad01b50bf9ce"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094961-A4DZ580X5MH26BIJ2ZB9/14_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094961-A4DZ580X5MH26BIJ2ZB9/14_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="14_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094961-A4DZ580X5MH26BIJ2ZB9/14_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339094961-A4DZ580X5MH26BIJ2ZB9/14_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1703"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="14_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e454ff5066124f1fcf71"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339097736-BVKSERB5LEXK2BTP589D/16_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339097736-BVKSERB5LEXK2BTP589D/16_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="16_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339097736-BVKSERB5LEXK2BTP589D/16_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339097736-BVKSERB5LEXK2BTP589D/16_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1667x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="16_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e457cd17ba7cf3daf94a"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100497-ACESR48O82TSLJ68PNO8/17_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100497-ACESR48O82TSLJ68PNO8/17_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="17_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100497-ACESR48O82TSLJ68PNO8/17_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100497-ACESR48O82TSLJ68PNO8/17_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1692x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="17_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e459766c4f231155b853"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100268-99T7KAANUTH5K4OO8ZZR/18_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100268-99T7KAANUTH5K4OO8ZZR/18_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="18_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100268-99T7KAANUTH5K4OO8ZZR/18_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339100268-99T7KAANUTH5K4OO8ZZR/18_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1679x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="18_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e45a29f2ed58fedaf766"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339102959-S1YWAMVSHK11QGSOFVRR/19_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339102959-S1YWAMVSHK11QGSOFVRR/19_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="19_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339102959-S1YWAMVSHK11QGSOFVRR/19_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339102959-S1YWAMVSHK11QGSOFVRR/19_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1682x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="19_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e45d2ad1055baa5700b5"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339103145-TK3ELCTVIFG72RLYYASE/20_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339103145-TK3ELCTVIFG72RLYYASE/20_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="20_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339103145-TK3ELCTVIFG72RLYYASE/20_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339103145-TK3ELCTVIFG72RLYYASE/20_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1744"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="20_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e45db894d568c828473c"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339105729-2VIQ29JE726VS24OG9GU/21_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339105729-2VIQ29JE726VS24OG9GU/21_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="21_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339105729-2VIQ29JE726VS24OG9GU/21_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339105729-2VIQ29JE726VS24OG9GU/21_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1664x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="21_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e45f8ef635617ce879bb"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339106535-BER5WLCOKLA4SCNS84U4/22_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339106535-BER5WLCOKLA4SCNS84U4/22_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="22_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339106535-BER5WLCOKLA4SCNS84U4/22_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339106535-BER5WLCOKLA4SCNS84U4/22_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1691x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="22_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e460ff5066124f1fd028"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339108895-A22GGWGOH4P1CHSBADBX/23_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339108895-A22GGWGOH4P1CHSBADBX/23_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="23_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339108895-A22GGWGOH4P1CHSBADBX/23_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339108895-A22GGWGOH4P1CHSBADBX/23_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="1689x2100"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="23_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e462c8dc955c7ce71e86"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339110305-U19STUPBB3T2H0LT3QOV/24_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339110305-U19STUPBB3T2H0LT3QOV/24_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="24_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339110305-U19STUPBB3T2H0LT3QOV/24_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339110305-U19STUPBB3T2H0LT3QOV/24_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1657"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="24_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e4632eb9d64fa5814a94"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="slide" data-type="image" data-animation-role="image">
+                                                    <div class="margin-wrapper">
+
+                                                        <a
+
+                                                                data-title=""
+                                                                data-description=""
+                                                                data-lightbox-theme="light"
+                                                                href="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339112666-T016FAF7DOYR5OANC9SA/25_vincent_desailly_rubber_trail.jpg"
+                                                                role="button"
+
+
+                                                                class="
+                    image-slide-anchor
+
+                      js-gallery-lightbox-opener
+
+                    content-fit
+                  "
+                                                        >
+
+                                                            <span class="v6-visually-hidden">Voir en taille réelle</span>
+
+                                                            <noscript><img
+                                                                        src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339112666-T016FAF7DOYR5OANC9SA/25_vincent_desailly_rubber_trail.jpg"
+                                                                        alt="25_vincent_desailly_rubber_trail.jpg"/>
+                                                            </noscript>
+                                                            <img class="thumb-image"
+                                                                 elementtiming="system-gallery-block-grid"
+                                                                 data-src="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339112666-T016FAF7DOYR5OANC9SA/25_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image="https://images.squarespace-cdn.com/content/v1/5e3ad5f2597c7c5ee13ccf4c/1703339112666-T016FAF7DOYR5OANC9SA/25_vincent_desailly_rubber_trail.jpg"
+                                                                 data-image-dimensions="2100x1703"
+                                                                 data-image-focal-point="0.5,0.5"
+                                                                 alt="25_vincent_desailly_rubber_trail.jpg"
+                                                                 data-load="false"
+                                                                 data-image-id="6586e4657edcbb6dc0665405"
+                                                                 data-type="image"/>
+                                                        </a>
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                        <style type="text/css"
+                                               id="design-grid-css">#block-yui_3_17_2_1_1703337580052_14973 .sqs-gallery-block-grid .sqs-gallery-design-grid {
+                                                margin-right: -20px;
+                                            }
+
+                                            #block-yui_3_17_2_1_1703337580052_14973 .sqs-gallery-block-grid .sqs-gallery-design-grid-slide .margin-wrapper {
+                                                margin-right: 20px;
+                                                margin-bottom: 20px;
+                                            }
+                                        </style>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </main>
+
+                <footer id="footer" class="site-footer" role="contentinfo">
+                    <div class="sqs-layout sqs-grid-12 columns-12 empty" data-layout-label="Contenu"
+                         data-type="block-field"
+                         id="footer-blocks">
+                        <div class="row sqs-row">
+                            <div class="col sqs-col-12 span-12"></div>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+        </div>
+
+
+        <script defer="true"
+                src="https://static1.squarespace.com/static/ta/55dccaa0e4b0f748d9f6f215/971/scripts/site-bundle.js"
+                type="text/javascript"></script>
+
+
+    </div>
+    </body>
+{% endblock %}
