@@ -28,7 +28,7 @@ class Gallery
     /**
      * @var Collection<int, Image>
      */
-    #[ORM\OneToMany(targetEntity: Image::class, mappedBy: 'gallery')]
+    #[ORM\OneToMany(targetEntity: Image::class, mappedBy: 'gallery', cascade: ['persist', 'remove'], orphanRemoval: true)]
     private Collection $images;
 
     #[ORM\ManyToOne(inversedBy: 'galleries')]
@@ -151,5 +151,10 @@ class Gallery
         $this->category->removeElement($category);
 
         return $this;
+    }
+
+    public function __toString(): string
+    {
+        return $this->caption ?? $this->filename ?? 'Image';
     }
 }
