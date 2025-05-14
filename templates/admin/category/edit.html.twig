@@ -1,0 +1,50 @@
+{# templates/admin/category/edit.html.twig #}
+{% extends '@EasyAdmin/crud/edit.html.twig' %}
+
+{% block body_javascript %}
+    {{ parent() }}
+    <script>
+        // Ajouter un gestionnaire pour les erreurs CSRF
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('form.ea-edit-form');
+
+            // Vérifier si un message d'erreur CSRF existe déjà
+            const errorElement = document.querySelector('.csrf-error-message');
+            if (errorElement) {
+                // Afficher l'erreur de manière plus visible
+                errorElement.classList.add('alert', 'alert-danger');
+            }
+
+            // Ajouter un gestionnaire d'événements pour le formulaire
+            if (form) {
+                form.addEventListener('submit', function (event) {
+                    // Vérifier que le token CSRF est présent
+                    const csrfToken = form.querySelector('input[name="_token"]');
+                    if (!csrfToken || !csrfToken.value) {
+                        event.preventDefault();
+                        // Créer un message d'erreur si le token est manquant
+                        const errorDiv = document.createElement('div');
+                        errorDiv.classList.add('alert', 'alert-danger', 'csrf-error-message');
+                        errorDiv.textContent = 'Le token CSRF est manquant. Veuillez rafraîchir la page et réessayer.';
+                        form.prepend(errorDiv);
+                    }
+                });
+            }
+        });
+    </script>
+{% endblock %}
+
+{% block main %}
+    {% if app.request.method == 'POST' and app.session.flashBag.has('error') %}
+        <div class="alert alert-danger csrf-error-message">
+            {{ app.session.flashBag.get('error')[0] }}
+        </div>
+    {% endif %}
+
+    {# Ajout explicite du token CSRF #}
+    <div class="hidden" style="display: none;">
+        <input type="hidden" name="_token" value="{{ csrf_token('category_form') }}">
+    </div>
+
+    {{ parent() }}
+{% endblock %}
